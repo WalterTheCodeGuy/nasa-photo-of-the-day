@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.css";
+import Apod from "./components/Apod";
+import styled from "styled-components";
+
+const WholeCard = styled.div`
+                    text-align: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <WholeCard>
+      <Apod />
+    </WholeCard>
   );
 }
 
